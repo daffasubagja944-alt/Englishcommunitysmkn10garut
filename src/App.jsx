@@ -1105,5 +1105,3 @@ function AdminPanel({ data, persist, isAdmin, setIsAdmin }) {
     </div>
   );
 }
-
-export default App;
