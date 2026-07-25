@@ -1105,3 +1105,4 @@ function AdminPanel({ data, persist, isAdmin, setIsAdmin }) {
     </div>
   );
 }
+
