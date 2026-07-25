@@ -466,7 +466,7 @@ function DevBadge() {
     >
       <span className="ec-devbadge-icon"><Instagram size={10} color="currentColor" /></span>
       <span className="ec-devbadge-text">
-        <span className="ec-devbadge-name">Dev Daffa</span>
+        <span className="ec-devbadge-name">Developer Daffa Mufti</span>
         <span className="ec-devbadge-sub">@xnnzooo.id</span>
       </span>
     </a>
@@ -1381,7 +1381,7 @@ function EVoting() {
       <Vote size={30} color="var(--gold)" style={{ marginBottom: 16 }} />
       <div className="ec-serif" style={{ fontSize: 24, marginBottom: 10 }}>E-Voting — Coming Soon</div>
       <p style={{ color: "var(--text-lo)", fontSize: 13.5, lineHeight: 1.8, marginBottom: 22 }}>
-        Developer Daffa Mufti sedang mengembangkan menu ini. Follow Instagram beliau di @xnnzooo.id agar beliau senang.
+        Developer Daffa Mufti sedang mengembangkan menu ini. Follow Instagram beliau ini @xnnzooo.id agar beliau senang.
       </p>
       <a href="https://instagram.com/xnnzooo.id" target="_blank" rel="noreferrer" className="ec-btn solid" style={{ textDecoration: "none" }}>
         <Instagram size={13} /> Follow @xnnzooo.id
