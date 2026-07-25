@@ -1088,8 +1088,22 @@ function AdminPanel({ data, persist, isAdmin, setIsAdmin }) {
         <button className="ec-btn solid" style={{ marginTop: 18 }} onClick={saveProfil}><Save size={13} /> Simpan Identitas Situs</button>
       </div>
 
-      <div className="ec-card" style={{ padding: 26, marginBottom: 20 }}>
-        <div className="ec-serif" style={{ fontSize: 20, color: "var(--gold-soft)", marginBottom: 6 }}><KeyRound size={16} style={{ verticalAlign: "-3px", marginRight: 6 }} />Ganti Kata Sandi Admin</div>
-        <p style={{ color: "var(--text-lo)", fontSize: 12.5, marginBottom: 16 }}>Kata sandi tidak ditampilkan di mana pun — hanya kolom isian tersembunyi seperti ini.</p>
+                  <div className="ec-card" style={{ padding: 26, marginBottom: 20 }}>
+        <div className="ec-serif" style={{ fontSize: 20, color: "var(--gold-soft)", marginBottom: 6 }}>
+          Ubah Sandi
+        </div>
+        <p style={{ color: "var(--text-lo)", fontSize: 12.5, marginBottom: 16 }}>
+          Kata sandi tidak ditampilkan di mana pun – hanya Kamu yang tahu.
+        </p>
         <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr 1fr", gap: 12, marginBottom: 14 }}>
-          <div><span className="ec-label">Kata Sandi Lama</span><input type="password" className="ec-in
+          <div>
+            <span className="ec-label">Kata Sandi Lama</span>
+            <input type="password" className="ec-in" />
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+}
+
+export default App;
