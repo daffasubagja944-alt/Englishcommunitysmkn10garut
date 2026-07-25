@@ -11,18 +11,6 @@ if (!supabaseUrl || !supabaseAnonKey) {
 
 export const supabase = createClient(supabaseUrl, supabaseAnonKey);
 
-/**
- * Wrapper ini meniru API window.storage (get/set) yang dipakai di dalam
- * App.jsx, tapi datanya disimpan di tabel Supabase bernama "site_data"
- * sehingga SEMUA pengunjung web melihat data yang sama.
- *
- * Struktur tabel yang dibutuhkan (jalankan sekali di Supabase SQL editor):
- *
- * create table site_data (
- *   key text primary key,
- *   value text
- * );
- */
 export const storage = {
   async get(key) {
     const { data, error } = await supabase
