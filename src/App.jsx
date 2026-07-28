@@ -1873,12 +1873,12 @@ function EVoting() {
   return (
     <div className="ec-card" style={{ padding: 48, maxWidth: 520, textAlign: "center", margin: "20px auto" }}>
       <Vote size={30} color="var(--gold)" style={{ marginBottom: 16 }} />
-      <div className="ec-serif" style={{ fontSize: 24, marginBottom: 10 }}>E-Voting — Coming Soon</div>
+      <div className="ec-serif" style={{ fontSize: 24, marginBottom: 10 }}>E-Voting</div>
       <p style={{ color: "var(--text-lo)", fontSize: 13.5, lineHeight: 1.8, marginBottom: 22 }}>
-        Developer Daffa Mufti sedang mengembangkan menu ini. Follow Instagram beliau di @xnnzooo.id agar beliau senang.
+        Pemilihan calon eskul sekarang dilakukan lewat halaman E-Voting terpisah. Tekan tombol di bawah buat masuk.
       </p>
-      <a href="https://instagram.com/xnnzooo.id" target="_blank" rel="noreferrer" className="ec-btn solid" style={{ textDecoration: "none" }}>
-        <Instagram size={13} /> Follow @xnnzooo.id
+      <a href="https://evoting-frontend-gules.vercel.app" target="_blank" rel="noreferrer" className="ec-btn solid" style={{ textDecoration: "none" }}>
+        <Vote size={13} /> Buka Halaman E-Voting
       </a>
     </div>
   );
