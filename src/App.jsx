@@ -1870,10 +1870,29 @@ function Tutor({ data, persist, isAdmin }) {
    E-VOTING (COMING SOON)
 --------------------------------------------------------- */
 function EVoting() {
+  const [status, setStatus] = useState(null); // null = lagi cek, true/false = hasil
+  useEffect(() => {
+    fetch("https://evoting-backend-production-f2b2.up.railway.app/api/pemilihan/status")
+      .then((r) => r.json())
+      .then((d) => setStatus(d.pemilihanDibuka))
+      .catch(() => setStatus(null));
+  }, []);
+
   return (
     <div className="ec-card" style={{ padding: 48, maxWidth: 520, textAlign: "center", margin: "20px auto" }}>
       <Vote size={30} color="var(--gold)" style={{ marginBottom: 16 }} />
       <div className="ec-serif" style={{ fontSize: 24, marginBottom: 10 }}>E-Voting</div>
+      {status !== null && (
+        <div style={{
+          display: "inline-flex", alignItems: "center", gap: 6, fontSize: 11, fontWeight: 700,
+          textTransform: "uppercase", letterSpacing: ".5px", padding: "6px 14px", borderRadius: 999,
+          marginBottom: 16, background: status ? "rgba(86,180,120,.15)" : "rgba(180,90,90,.15)",
+          color: status ? "#8fe0ac" : "#e0a08f",
+        }}>
+          <span style={{ width: 7, height: 7, borderRadius: "50%", background: status ? "#5cd482" : "#d47a5c" }} />
+          {status ? "Pemilihan Sedang Dibuka" : "Pemilihan Sedang Ditutup"}
+        </div>
+      )}
       <p style={{ color: "var(--text-lo)", fontSize: 13.5, lineHeight: 1.8, marginBottom: 22 }}>
         Pemilihan calon eskul sekarang dilakukan lewat halaman E-Voting terpisah. Tekan tombol di bawah buat masuk.
       </p>
